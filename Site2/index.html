@@ -7,10 +7,58 @@
 </head>
 <body>
 	<h1>Please Enter Your Details For Our Dating Website!</h1>
-	<form action="" method="post" enctype="multipart/form-type">
+	<form action="" method="post" enctype="multipart/form-data">
 		<fieldset>
 			<legend>Your Face</legend>
+			<label for="Image">Your Image:</label>
+			<input type="file" name="Image">
+			<p>Image preview:</p>
 		</fieldset>
+		<fieldset>
+			<legend>Your General Details</legend>
+			<label for="Name">Name:</label>
+			<input type="text" name="Name" placeholder="Your full name"> <br>
+			<label for="gender">Gender:</label>
+			<input type="radio" name="male" checked="checked">Male
+			<input type="radio" name="female">Female<br>
+			<label for="Age">Age:</label>
+			<input type="number" name="age" value="18"> <br>
+			<label for="dob">Date of birth:</label>
+			<input type="date" name="dob"><br>
+			<label for="color">Favorite color:</label>
+			<input type="color" name="color"><br>
+			<label for="country">Which country:</label>
+			<select name="country">
+				<option value="india">India</option>
+				<option value="us">US</option>
+				<option value="uk">UK</option>
+			</select>			
+		</fieldset>
+		<fieldset>
+			<legend>Your Indicators</legend>
+			<label for="height">Height:</label>
+			<span>Short</span>
+			<input type="range" name="height" min="0" max="100"	step="10" value="50">
+			<span>Tall</span><br>
+			<label for="salary">Salary:</label>
+			<span>Poor</span>
+			<input type="range" name="salary" min="0" max="100" step="10" value="50">
+			<span>Rich</span>
+		</fieldset>
+		<fieldset>
+			<legend>Your Contact Information</legend>
+			<label for="email">Email:</label>
+			<input type="email" name="email"><br>
+			<label for="mobile">Mobile:</label>
+			<input type="number" name="mobile"><br>
+			<label for="address">Address:</label>
+			<textarea name="address"></textarea><br>
+			<label for="contact_method">Method to contact you:</label>
+			<input type="checkbox" name="contact_method" value="email">Email
+			<input type="checkbox" name="contact_method" value="whatsapp">Whatsapp
+			<input type="checkbox" name="contact_method" value="chat">In-app chat
+		</fieldset>
+		<input type="submit" name="submit">
 	</form>
 </body>
 </html>
